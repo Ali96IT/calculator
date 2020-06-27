@@ -1,0 +1,77 @@
+
+
+</html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="calculator.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="main">
+      <h6 style="text-align: center;color: white;">Calculator</h6>
+
+        <div>
+
+          <div style="border: 2px solid #97bdfa;">
+            <input id="result" type="text" readonly="readonly" class="txt" placeholder="0">
+          <input type="text" id="answer" readonly="readonly" style="color: green;">
+          </div>
+          </div>
+        <div >
+        <div class="groupbtn">
+
+        <div class="container">
+          <button onclick="clearResult()" class="btn-1" style="margin-top:  5px;background-color: rgb(89, 131, 248); color: white;" title="Clear" data-toggle="popover" data-trigger="hover" data-content="Some content">C</button>
+            <button onclick="getNumber('%')" class="btn-1" style="margin-top:  5px;background-color: rgb(179, 198, 245); color: white;" title="Percentage" data-toggle="popover" data-trigger="hover" data-content="Some content">%</button>
+            <button onclick="getNumber('/')" class="btn-1" style="margin-top:  5px;background-color: rgb(179, 198, 245); color: white;" title="Divide" data-toggle="popover" data-trigger="hover" data-content="Some content"><i class='fas fa-divide'></i></button>
+            <button onclick="brackets()" class="btn-1" style="margin-top:  5px;background-color: rgb(179, 198, 245); color: white;" >( )</button>
+
+              <button onclick="backSpace()" class="btn-1" style="margin-top:  5px;background-color: rgb(89, 131, 248); color: white;" title="Cancle" data-toggle="popover" data-trigger="hover" data-content="Some content"><i class="fa fa-close"></i></button>
+
+
+        </div>
+        <div>
+        <button class="btn-2" onclick="getNumber('7')">7</button>
+        <button class="btn-2" onclick="getNumber('8')">8</button>
+        <button class="btn-2" onclick="getNumber('9')">9</button>
+        <button class="btn-1" onclick="getNumber('*')" style="background-color: rgb(179, 198, 245); color: white;">x</button>
+    </div>   
+<div>
+<button class="btn-2" onclick="getNumber('4')">4</button>
+<button class="btn-2" onclick="getNumber('5')">5</button>
+<button class="btn-2" onclick="getNumber('6')">6</button>
+<button class="btn-1" onclick="getNumber('-')" style="background-color: rgb(179, 198, 245); color: white;">-</button>
+</div>
+<div>
+<button class="btn-2" onclick="getNumber('1')">1</button>
+<button class="btn-2" onclick="getNumber('2')">2</button>
+<button class="btn-2" onclick="getNumber('3')">3</button>
+<button class="btn-1" onclick="getNumber('+')" style="background-color: rgb(179, 198, 245); color: white;">+</button>
+</div>
+<div>
+    <button class="btn-2"  onclick="getNumber('(-')">+/-</button>
+    <button class="btn-2"  onclick="getNumber('0')">0</button>
+    <button class="btn-2"  onclick="getNumber('.')">.</button>
+    <button class="btn-1" onclick="getResult()" style="background-color: rgb(89, 131, 248); color: white;">=</button>
+    </div>
+</div>
+</div>
+    </div>
+<script>
+    $(function () {
+  $('[data-toggle="popover"]').popover()
+})
+</script>
+</body>
+</html>
